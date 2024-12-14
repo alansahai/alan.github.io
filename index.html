@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alan S</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/1a381ba394.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Assets/logo2.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact Me!</a></li>
+                    <i class="fas fa-solid fa-x" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Ready to Innovate!</p>
+                <h1>Hi, I'm <span>Alan</span><br>from India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--------about------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Assets/DSC_7020.JPG">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Alan is an enthusiastic Computer Science and Engineering student at Sri Ramakrishna Institute of
+                        Technology driven by a passion for solving complex problems and contributing to meaningful
+                        innovations in the tech world. Skilled in programming languages like Python, MATLAB, C++, and
+                        Java. Alan has also developed a strong understanding of data structures and algorithms. His
+                        experience includes hands-on projects in Machine Learning and hardware-based innovations,
+                        with a growing focus on Data Analytics and Artificial Intelligence.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Creating professional webpages using HTML, CSS,
+                                Javascript</li>
+                            <li><span>Java</span><br>Grasping all the basics of Java Programming and working out the
+                                concepts efficiently</li>
+                            <li><span>TensorFlow & Keras</span><br>Working on an Image Recognition Project using those
+                                frameworks</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Media Relations and Outreach Specialist</span><br>The Competitive Programming
+                                Club, SRIT<br>June 2024 - Present</li>
+                            <li><span>Executive Committee Member</span><br>Technical Association for Computer Engineers
+                                (TEKACE-SRIT)<br>June 2024 - Present</li>
+                            <li><span>Co-Founder</span><br>Alan Stills<br>February 2016 - Present</li>
+                            <li><span>Lead Photographer</span><br>Alan Stills<br>May 2022 - August 2023</li>
+                            <li><span>Summer Intern</span><br>J. S. Aluminium Private Limited<br>June 2023 - August 2023
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Sri Ramakrishna Institute of Technology</span><br>Bachelor of Engineering
+                                <br>Computer Science and Engineering
+                            </li>
+                            <li><span>Jayam Foundation Matriculation Higher Secondary School</span><br>Higher Secondary
+                                Schooling</li>
+                            <li><span>Bishop Francis Matriculation School</span><br>Secondary Schooling</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--services-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-globe"></i>
+                    <h2>Web Development</h2>
+                    <p>Creating visually appealing, user-friendly, and responsive websites tailored to client needs.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-circle-user"></i>
+                    <h2>Project Management</h2>
+                    <p>Efficiently planning, organizing, and executing projects to ensure timely delivery and quality
+                        outcomes.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-camera"></i>
+                    <h2>Photography</h2>
+                    <p>Capturing moments with creativity and precision, offering professional photography services for
+                        events, portraits, and more.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------portfolio----------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Assets/face.png">
+                    <div class="layer">
+                        <h3>Facial Emotion Recognition using VGG16 & VGG19</h3>
+                        <p>This project develops a real-time facial emotion recognition system using deep learning,
+                            specifically leveraging the VGG16 architecture. It classifies emotions such as happiness,
+                            sadness, anger, and surprise from facial expressions, with applications in healthcare,
+                            human-computer interaction, and emotion-aware AI. The system uses transfer learning to
+                            improve accuracy with limited data, fine-tuning the VGG16 model pre-trained on ImageNet.
+                            Techniques like data augmentation and early stopping were applied to optimize performance.
+                            The system has potential applications in virtual assistants, healthcare, and customer
+                            service, with future work exploring advanced models and multi-modal emotion analysis.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Assets/bot.png">
+                    <div class="layer">
+                        <h3>Conversational Image Recognition Chatbot</h3>
+                        <p>This project develops a Conversational Image Recognition Chatbot combining NLP and image
+                            recognition for real-time interactions. Using the VGG-16 model, it identifies objects in
+                            user-uploaded images and generates relevant responses with a Late Fusion Encoder. Future
+                            upgrades will incorporate LSTM and large language models for enhanced conversational depth.
+                            Scalable via cloud infrastructure, the chatbot has applications in e-commerce, healthcare,
+                            and security, automating image-based queries and improving user experience efficiently.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Assets/rfid.png">
+                    <div class="layer">
+                        <h3>SmartPunch: Smart Attendance Management System using RFID's</h3>
+                        <p>This project leverages RFID technology and IoT to streamline attendance management. Students
+                            tap RFID cards, sending data to a cloud database accessible via a mobile app. The system
+                            enhances accuracy, efficiency, and transparency while reducing administrative tasks. Future
+                            developments include LMS integration, advanced analytics, and automated notifications,
+                            offering a scalable solution to improve attendance practices in educational institutions.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!--Contact Form-->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>alansahai123@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+910123456879</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/alan-s-9385a328a/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/alansahai"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/justtalan.psd_/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="Assets/Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Alan S <i class="fa-solid fa-heart"></i>. Last Updated: 13 Dec 2024</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu1 = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu1.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu1.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzYYbfCT4cprEDTalSfiOUrhaFnaBus4E-PUS1TADB-2qJZAxF-Koj3SmaBaHbO5eU7-g/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "The Response has been Submitted Successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
